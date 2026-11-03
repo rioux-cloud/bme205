@@ -1,0 +1,13 @@
+name: bme205-prs
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - pyarrow        # fast parquet cache of the 2 GB CSVs
+  - scikit-learn
+  - lightgbm       # conda-forge build bundles OpenMP (no brew libomp needed)
+  - scipy
+  - matplotlib     # ROC curves / feature importance plots for the writeup
+  - ipykernel      # optional: use this env in Jupyter/VS Code
